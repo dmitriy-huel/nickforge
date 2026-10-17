@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>NickForge — Вход</title>
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<section class="screen screen--auth active">
+  <header class="app-header">
+    <div class="app-header__brand">
+      <div class="app-header__logo"><span>N</span></div>
+      <div class="app-header__titles">
+        <span class="app-header__title">NICKFORGE</span>
+        <span class="app-header__subtitle">ESPORTS IDENTITY LAB</span>
+      </div>
+    </div>
+    <div class="app-header__status">
+      <span class="status-dot"></span>
+      <span class="status-text">LIVE</span>
+    </div>
+  </header>
+
+  <main class="screen__main">
+    <p class="section-label">// ДОБРО ПОЖАЛОВАТЬ</p>
+    <h1 class="hero-title">ТВОЙ НИК.<br><span class="accent">ТВОЙ СТИЛЬ.</span></h1>
+    <p class="hero-desc">Собери игровую идентичность, которая звучит громче обычного ника.</p>
+
+    <form class="auth-form" action="style.html">
+      <div class="auth-form__header">
+        <h2>ВХОД В СИСТЕМУ</h2>
+        <span class="badge badge--secure">🔒</span>
+      </div>
+
+      <label class="field">
+        <span class="field__label">EMAIL ИЛИ ИГРОВОЙ ID</span>
+        <div class="field__input-wrap">
+          <span class="field__icon">✉</span>
+          <input type="text" placeholder="you@nickforge.gg" value="you@nickforge.gg" autocomplete="username">
+        </div>
+      </label>
+
+      <label class="field">
+        <span class="field__label">ПАРОЛЬ</span>
+        <div class="field__input-wrap">
+          <span class="field__icon">🔒</span>
+          <input type="password" placeholder="••••••••" value="password" autocomplete="current-password">
+          <button type="button" class="field__toggle" aria-label="Показать пароль">👁</button>
+        </div>
+      </label>
+
+      <a href="#" class="link-forgot">Забыли пароль?</a>
+      <button type="submit" class="btn btn--primary btn--full">ВОЙТИ <span class="arrow">→</span></button>
+    </form>
+
+    <p class="auth-footer">Ещё нет профиля? <a href="#" class="accent-link">Создать аккаунт</a></p>
+  </main>
+
+  <footer class="app-footer"><span>NICKFORGE // BUILD YOUR LEGEND</span></footer>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>

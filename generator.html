@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>NickForge — Генератор</title>
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<section class="screen screen--generator active">
+  <header class="app-header">
+    <div class="app-header__brand">
+      <div class="app-header__logo"><span>N</span></div>
+      <div class="app-header__titles">
+        <span class="app-header__subtitle">ГЕНЕРАТОР НИКОВ</span>
+        <span class="app-header__title" id="generator-style-title">АГРЕССИВНЫЙ<br>СТИЛЬ</span>
+      </div>
+    </div>
+    <button class="btn btn--ghost btn--small" type="button" id="btn-reset">↻ Сброс</button>
+  </header>
+
+  <main class="screen__main">
+    <div class="generator-panel">
+      <div class="generator-panel__meta">
+        <span class="badge badge--outline" id="generator-tag">TAG: [AK] ESPORTS // v.4</span>
+        <span class="badge badge--orange">● READY</span>
+      </div>
+      <p class="generator-panel__clan">[ CLAN TAG → NICK ]</p>
+      <h2 class="generator-result" id="nick-output">AK_GHOST</h2>
+      <p class="generator-panel__info" id="nick-info">8 СИМВОЛОВ • <span class="accent">LEET-COMPATIBLE</span></p>
+      <div class="variants" id="variants-box">
+        <span class="variants__label">ВАРИАНТЫ:</span>
+      </div>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat-box">
+        <span class="stat-box__label">Уник.</span>
+        <span class="stat-box__value" id="stat-unique">01 / 77</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-box__label">Совместимость</span>
+        <span class="stat-box__value accent">[*/*]</span>
+      </div>
+    </div>
+
+    <div class="slider-block">
+      <div class="slider-block__header">
+        <span class="slider-block__label">ДЛИНА НИКНЕЙМА</span>
+        <span class="slider-block__value accent" id="length-value">8</span>
+      </div>
+      <input type="range" min="4" max="16" value="8" class="slider" id="length-slider">
+      <div class="slider-block__marks">
+        <span>MIN: 4</span><span>MID: 10</span><span>MAX: 16</span>
+      </div>
+    </div>
+
+    <div class="action-row">
+      <button class="btn btn--outline" id="btn-other" type="button">↻ ДРУГОЙ ВАРИАНТ</button>
+      <button class="btn btn--primary" id="btn-take" type="button">ВЗЯТЬ ЭТОТ НИК</button>
+    </div>
+
+    <div class="result-card" id="result-card" hidden>
+      <p class="section-label">// ИТОГОВЫЙ ТЕГ КЛАНА + НИК</p>
+      <h2 class="result-nick" id="final-nick">AK_GHOST</h2>
+      <p class="result-copied" id="copy-status">✓ Скопировано в буфер обмена</p>
+    </div>
+
+    <button class="btn btn--primary btn--full" id="btn-copy-again" type="button" hidden>📋 КОПИРОВАТЬ СНОВА</button>
+
+    <div class="availability">
+      <p class="availability__title">🔒 СТАТУС ДОСТУПНОСТИ НИКА В ИГРАХ <span class="accent">LIVE PING</span></p>
+      <div class="availability__grid" id="availability-grid"></div>
+    </div>
+
+    <div class="hint-box">
+      <span class="hint-box__icon">ℹ</span>
+      <p>В игре перейди в <strong>Профиль → Сменить ник</strong> и вставь текст <strong>(на телефоне)</strong> или нажми <strong>Ctrl + V</strong> на ПК.</p>
+    </div>
+
+    <div class="action-row">
+      <button class="btn btn--outline" type="button">↗ ПОДЕЛИТЬСЯ<br><small>СКВАДУ</small></button>
+      <button class="btn btn--outline" type="button">★ В ИЗБРАННЫЕ<br><small>ТЕГИ</small></button>
+    </div>
+  </main>
+
+  <nav class="bottom-nav">
+    <a href="index.html" class="bottom-nav__item"><span class="bottom-nav__icon">⌂</span><span class="bottom-nav__label">ВХОД</span></a>
+    <a href="style.html" class="bottom-nav__item"><span class="bottom-nav__icon">☰</span><span class="bottom-nav__label">СТИЛИ</span></a>
+    <a href="generator.html" class="bottom-nav__item active"><span class="bottom-nav__icon">⚙</span><span class="bottom-nav__label">ГЕНЕРАТОР</span></a>
+    <a href="profile.html" class="bottom-nav__item"><span class="bottom-nav__icon">👤</span><span class="bottom-nav__label">ПРОФИЛЬ</span></a>
+  </nav>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>

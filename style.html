@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>NickForge — Выбор стиля</title>
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<section class="screen screen--style active">
+  <header class="app-header">
+    <div class="app-header__brand">
+      <div class="app-header__logo"><span>N</span></div>
+      <div class="app-header__titles">
+        <span class="app-header__title accent">#NickForge</span>
+        <span class="app-header__subtitle">ВЫБОР СТИЛЯ НИКА</span>
+      </div>
+    </div>
+    <div class="app-header__status">
+      <span class="status-box">
+        <span class="status-box__label">SQUAD TAG</span>
+        <span class="status-box__value">[AK]</span>
+      </span>
+      <span class="status-text accent">LIVE</span>
+    </div>
+  </header>
+
+  <main class="screen__main">
+    <div class="style-current">
+      <span class="style-current__tag">AK</span>
+      <div class="style-current__info">
+        <span class="style-current__label">БАЗОВЫЙ КЛАН-ТЕГ</span>
+        <span class="style-current__value">[AK] • ESPORTS EDITION</span>
+      </div>
+      <span class="badge badge--outline">AUTO-TAG: ON</span>
+    </div>
+
+    <p class="section-label">// ВЫБЕРИ АТМОСФЕРУ НИКНЕЙМА</p>
+
+    <div class="style-list">
+      <a href="generator.html?style=aggressive" class="style-card style-card--active" data-style="aggressive">
+        <div class="style-card__icon">🔥</div>
+        <div class="style-card__body">
+          <h3>АГРЕССИВНЫЙ <span class="badge badge--orange">ВЫБРАН</span></h3>
+          <p>AK_GHOST, BLOOD_STRIKE, REAPER, HELLFIRE</p>
+          <p class="style-card__hint">ДЛЯ ТЕХ, КТО ИГРАЕТ НА ПРОЛОМ.</p>
+        </div>
+      </a>
+
+      <a href="generator.html?style=tactical" class="style-card" data-style="tactical">
+        <div class="style-card__icon">❄</div>
+        <div class="style-card__body">
+          <h3>ТАКТИЧЕСКИЙ <span class="badge badge--ghost">PRO</span></h3>
+          <p>SILENT, ESPORTS, CYPHER_OPS, RECON</p>
+          <p class="style-card__hint">ТИХО, ХОЛОДНО, ТОЧНО.</p>
+        </div>
+      </a>
+
+      <a href="generator.html?style=funny" class="style-card" data-style="funny">
+        <div class="style-card__icon">😄</div>
+        <div class="style-card__body">
+          <h3>СМЕШНОЙ <span class="badge badge--ghost">FUN</span></h3>
+          <p>BOMB_DEFUSER_0_1, NOOB_SLAYER_3000, LAGGY_BOT</p>
+          <p class="style-card__hint">КОГДА СЕРЬЁЗНОСТЬ — ЭТО НЕ ПРО ТЕБЯ.</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="toggle-row">
+      <div class="toggle-group">
+        <span class="toggle-group__label">РАСКЛАДКА</span>
+        <div class="toggle-buttons" data-toggle="layout">
+          <button class="toggle-btn active" type="button" data-value="latin">LATIN</button>
+          <button class="toggle-btn" type="button" data-value="cyrillic">КИР</button>
+        </div>
+      </div>
+      <div class="toggle-group">
+        <span class="toggle-group__label">СЕТ СТИЛИЗАЦИИ</span>
+        <div class="toggle-buttons" data-toggle="styling">
+          <button class="toggle-btn active" type="button" data-value="esports">ESPORTS</button>
+          <button class="toggle-btn" type="button" data-value="normal">NORMAL</button>
+        </div>
+      </div>
+    </div>
+
+    <a href="generator.html?style=aggressive" class="btn btn--primary btn--full" id="btn-generate">
+      ⚡ СГЕНЕРИРОВАТЬ НИК <span class="arrow">→</span>
+    </a>
+  </main>
+
+  <nav class="bottom-nav">
+    <a href="index.html" class="bottom-nav__item"><span class="bottom-nav__icon">⌂</span><span class="bottom-nav__label">ВХОД</span></a>
+    <a href="style.html" class="bottom-nav__item active"><span class="bottom-nav__icon">☰</span><span class="bottom-nav__label">СТИЛИ</span></a>
+    <a href="generator.html" class="bottom-nav__item"><span class="bottom-nav__icon">⚙</span><span class="bottom-nav__label">ГЕНЕРАТОР</span></a>
+    <a href="profile.html" class="bottom-nav__item"><span class="bottom-nav__icon">👤</span><span class="bottom-nav__label">ПРОФИЛЬ</span></a>
+  </nav>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>NickForge — Профиль</title>
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<section class="screen screen--profile active">
+  <header class="app-header">
+    <div class="app-header__brand">
+      <div class="app-header__logo"><span>N</span></div>
+      <div class="app-header__titles">
+        <span class="app-header__title">NICKFORGE</span>
+        <span class="app-header__subtitle">PROFILE HUB</span>
+      </div>
+    </div>
+    <div class="app-header__status">
+      <span class="status-dot"></span>
+      <span class="status-text">LIVE</span>
+    </div>
+  </header>
+
+  <main class="screen__main">
+
+    <div class="profile-hero">
+      <div class="profile-avatar">
+        <span>N</span>
+        <button class="profile-avatar__edit" type="button" aria-label="Изменить аватар">✎</button>
+      </div>
+      <div class="profile-hero__info">
+        <h1 class="profile-hero__name">NICK_GHOST</h1>
+        <p class="profile-hero__tag">[AK] • ESPORTS EDITION</p>
+        <span class="badge badge--orange">● PRO MEMBER</span>
+      </div>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat-box">
+        <span class="stat-box__label">Ников создано</span>
+        <span class="stat-box__value accent">47</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-box__label">Избранных</span>
+        <span class="stat-box__value accent" id="fav-count">3</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-box__label">Ранг</span>
+        <span class="stat-box__value">#1 248</span>
+      </div>
+    </div>
+
+    <div class="profile-block">
+      <div class="profile-block__header">
+        <span class="profile-block__title">ДАННЫЕ АККАУНТА</span>
+        <button class="btn btn--ghost btn--small" type="button">Изменить</button>
+      </div>
+      <ul class="data-list">
+        <li class="data-item">
+          <span class="data-item__label">EMAIL</span>
+          <span class="data-item__value">you@nickforge.gg</span>
+        </li>
+        <li class="data-item">
+          <span class="data-item__label">ИГРОВОЙ ID</span>
+          <span class="data-item__value">NICK_GHOST#4721</span>
+        </li>
+        <li class="data-item">
+          <span class="data-item__label">КЛАН-ТЕГ</span>
+          <span class="data-item__value">[AK]</span>
+        </li>
+        <li class="data-item">
+          <span class="data-item__label">РЕГИОН</span>
+          <span class="data-item__value">EU • WEST</span>
+        </li>
+        <li class="data-item">
+          <span class="data-item__label">ДАТА РЕГИСТРАЦИИ</span>
+          <span class="data-item__value">12.03.2024</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="profile-block">
+      <div class="profile-block__header">
+        <span class="profile-block__title">★ ИЗБРАННЫЕ НИКИ</span>
+        <span class="badge badge--outline">3 / 10</span>
+      </div>
+      <div class="fav-list" id="fav-list">
+        <div class="fav-item">
+          <div class="fav-item__info">
+            <span class="fav-item__nick">AK_GHOST</span>
+            <span class="fav-item__meta">АГРЕССИВНЫЙ • 8 СИМВОЛОВ</span>
+          </div>
+          <div class="fav-item__actions">
+            <button class="fav-btn" type="button" title="Копировать">📋</button>
+            <button class="fav-btn fav-btn--remove" type="button" title="Удалить">✕</button>
+          </div>
+        </div>
+        <div class="fav-item">
+          <div class="fav-item__info">
+            <span class="fav-item__nick">SILENT_OPS</span>
+            <span class="fav-item__meta">ТАКТИЧЕСКИЙ • 10 СИМВОЛОВ</span>
+          </div>
+          <div class="fav-item__actions">
+            <button class="fav-btn" type="button" title="Копировать">📋</button>
+            <button class="fav-btn fav-btn--remove" type="button" title="Удалить">✕</button>
+          </div>
+        </div>
+        <div class="fav-item">
+          <div class="fav-item__info">
+            <span class="fav-item__nick">NOOB_SLAYER3000</span>
+            <span class="fav-item__meta">СМЕШНОЙ • 15 СИМВОЛОВ</span>
+          </div>
+          <div class="fav-item__actions">
+            <button class="fav-btn" type="button" title="Копировать">📋</button>
+            <button class="fav-btn fav-btn--remove" type="button" title="Удалить">✕</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="profile-block">
+      <div class="profile-block__header">
+        <span class="profile-block__title">⟲ ИСТОРИЯ НИКОВ</span>
+        <span class="badge badge--ghost">ПОСЛЕДНИЕ 5</span>
+      </div>
+      <ul class="history-list" id="history-list">
+        <li class="history-item">
+          <span class="history-item__nick">REAPER_X</span>
+          <span class="history-item__date">сегодня, 14:32</span>
+        </li>
+        <li class="history-item">
+          <span class="history-item__nick">BLOOD_STRIKE</span>
+          <span class="history-item__date">сегодня, 14:18</span>
+        </li>
+        <li class="history-item">
+          <span class="history-item__nick">NIGHT_RAID</span>
+          <span class="history-item__date">вчера, 22:05</span>
+        </li>
+        <li class="history-item">
+          <span class="history-item__nick">PHANTOM_7</span>
+          <span class="history-item__date">вчера, 19:47</span>
+        </li>
+        <li class="history-item">
+          <span class="history-item__nick">TOXIC_WAVE</span>
+          <span class="history-item__date">12.03.2024</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="profile-block">
+      <div class="profile-block__header">
+        <span class="profile-block__title">⚙ НАСТРОЙКИ</span>
+      </div>
+      <ul class="settings-list">
+        <li class="settings-item">
+          <span class="settings-item__label">Тёмная тема</span>
+          <span class="switch switch--on"></span>
+        </li>
+        <li class="settings-item">
+          <span class="settings-item__label">Уведомления о свободных никах</span>
+          <span class="switch switch--on"></span>
+        </li>
+        <li class="settings-item">
+          <span class="settings-item__label">Авто-копирование в буфер</span>
+          <span class="switch"></span>
+        </li>
+        <li class="settings-item">
+          <span class="settings-item__label">Скрыть профиль</span>
+          <span class="switch"></span>
+        </li>
+      </ul>
+    </div>
+
+    <button class="btn btn--outline btn--full" id="btn-logout" type="button">ВЫЙТИ ИЗ АККАУНТА</button>
+
+  </main>
+
+  <nav class="bottom-nav">
+    <a href="index.html" class="bottom-nav__item"><span class="bottom-nav__icon">⌂</span><span class="bottom-nav__label">ВХОД</span></a>
+    <a href="style.html" class="bottom-nav__item"><span class="bottom-nav__icon">☰</span><span class="bottom-nav__label">СТИЛИ</span></a>
+    <a href="generator.html" class="bottom-nav__item"><span class="bottom-nav__icon">⚙</span><span class="bottom-nav__label">ГЕНЕРАТОР</span></a>
+    <a href="profile.html" class="bottom-nav__item active"><span class="bottom-nav__icon">👤</span><span class="bottom-nav__label">ПРОФИЛЬ</span></a>
+  </nav>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
